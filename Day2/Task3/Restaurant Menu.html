@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ece5db;
+            text-align: center;
+            background-image: url(menu.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+        }
+        .menu-container {
+            width: 60%;
+            margin: 20px auto;
+            background: rgb(174, 96, 18);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-image: url(bg2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        h1 {
+            color: #333;
+        }
+        .menu-section {
+            margin-bottom: 20px;
+        }
+        .menu-section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .item-details {
+            text-align: left;
+            flex-grow: 1;
+        }
+        .item-price {
+            font-weight: bold;
+            color: #121111;
+            margin: 5px;
+        }
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .menu-item:hover {
+            background-color: #f0f0f0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .add-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+        .add-btn:hover {
+            background-color: #218838;
+        }
+        .add-btn:active {
+            transform: scale(0.95);
+        }
+        h2{
+            color: #77460f;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Indian Restaurant Menu</h1>
+        
+        <div class="menu-section">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <img src="samosa.jpg" alt="Samosa">
+                <div class="item-details">
+                    <strong>Samosa</strong><br>
+                    <small>Fried pastry filled with spiced potatoes and peas.</small>
+                </div>
+                <div class="item-price">₹50</div>
+                <button class="add-btn">Add</button>
+            </div>
+            <div class="menu-item">
+                <img src="paneer_tikka.jpg" alt="Paneer Tikka">
+                <div class="item-details">
+                    <strong>Paneer Tikka</strong><br>
+                    <small>Marinated and grilled paneer cubes with spices.</small>
+                </div>
+                <div class="item-price">₹250</div>
+                <button class="add-btn">Add</button>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <img src="butter_chicken.jpg" alt="Butter Chicken">
+                <div class="item-details">
+                    <strong>Butter Chicken</strong><br>
+                    <small>Rich and creamy tomato-based curry with tender chicken.</small>
+                </div>
+                <div class="item-price">₹180</div>
+                <button class="add-btn">Add</button>
+            </div>
+            <div class="menu-item">
+                <img src="dal_makhani.jpg" alt="Dal Makhani">
+                <div class="item-details">
+                    <strong>Dal Makhani</strong><br>
+                    <small>Slow-cooked black lentils in a creamy, spiced sauce.</small>
+                </div>
+                <div class="item-price">₹260</div>
+                <button class="add-btn">Add</button>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <img src="gulab_jamun.jpg" alt="Gulab Jamun">
+                <div class="item-details">
+                    <strong>Gulab Jamun</strong><br>
+                    <small>Soft, deep-fried milk dumplings soaked in sugar syrup.</small>
+                </div>
+                <div class="item-price">₹160</div>
+                <button class="add-btn">Add</button>
+            </div>
+            <div class="menu-item">
+                <img src="rasmalai.jpg" alt="Rasmalai">
+                <div class="item-details">
+                    <strong>Rasmalai</strong><br>
+                    <small>Soft paneer balls soaked in sweetened milk with cardamom.</small>
+                </div>
+                <div class="item-price">₹180</div>
+                <button class="add-btn">Add</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
