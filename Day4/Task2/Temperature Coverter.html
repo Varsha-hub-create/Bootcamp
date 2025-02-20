@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            background-image:url(bg.jpg) ;
+            background-size: 100%;
+        }
+        .container {
+            background: rgb(209, 242, 244);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            width:450px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-4 shadow-lg animated fadeIn">
+        <h2 class="mb-3">Temperature Converter</h2>
+        <label class="form-label">Celsius:</label>
+        <input type="number" id="celsius" class="form-control mb-3" oninput="convertToFahrenheit()">
+        <label class="form-label">Fahrenheit:</label>
+        <input type="number" id="fahrenheit" class="form-control mb-3" oninput="convertToCelsius()">
+    </div>
+    
+    <script>
+        function convertToFahrenheit() {
+            let celsius = document.getElementById('celsius').value;
+            if (celsius !== '') {
+                document.getElementById('fahrenheit').value = (celsius * 9/5) + 32;
+            } else {
+                document.getElementById('fahrenheit').value = '';
+            }
+        }
+
+        function convertToCelsius() {
+            let fahrenheit = document.getElementById('fahrenheit').value;
+            if (fahrenheit !== '') {
+                document.getElementById('celsius').value = ((fahrenheit - 32) * 5/9).toFixed(2);
+            } else {
+                document.getElementById('celsius').value = '';
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
