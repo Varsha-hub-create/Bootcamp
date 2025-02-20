@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            background-color: #f5e4e4;
+            text-align: center;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding-top: 50px;
+        }
+        .social-icons a, .project-icons i {
+            font-size: 24px;
+            margin: 10px;
+            color: #333;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-icons a:hover, .project-icons i:hover {
+            color: #007bff;
+            transform: scale(1.2);
+        }
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .project-icons {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
 
+    <nav class="navbar navbar-light bg-white px-4">
+        <span class="navbar-brand mb-0 h5">Varshini S</span>
+        <span>Portfolio</span>
+        <div>
+            <a href="Resume.pdf" target="_blank" class="mx-2 text-dark"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="mailto:varshinisakthivel18@gmail.com" class="mx-2 text-dark"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://github.com/Varsha-hub-create" target="_blank" class="mx-2 text-dark"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/varshini-s-" target="_blank" class="mx-2 text-dark"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="tel:+916380997220" class="mx-2 text-dark"><i class="fas fa-phone"></i> Contact</a>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <img src="me.jpg" alt="Profile Image" class="profile-img">
+        <h2 class="mt-3">Varshini S</h2>
+        <h5 class="text-muted">About Me</h5>
+        <p class="text-muted">
+            A passionate IT student skilled in Python, web development, and AI. Enthusiastic about problem-solving, automation, and professional growth in the tech industry.
+        </p>
+
+        <div class="social-icons">
+            <a href="Resume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+            <a href="mailto:varshinisakthivel18@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/Varsha-hub-create" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/varshini-s-" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="tel:+916380997220"><i class="fas fa-phone"></i></a>
+        </div>
+
+        <!-- Projects Section -->
+        <h2 class="mt-5">My Projects</h2>
+
+        <div class="project-card">
+            <div class="project-icons"><a href="https://github.com/Varsha-hub-create"><i class="fas fa-robot"></i></a></div>
+            <h4>AI Assistant Using Python</h4>
+            <p>A voice-controlled AI assistant that automates tasks like searching, opening apps, and answering queries.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icons"><a href="https://github.com/Varsha-hub-create"><i class="fas fa-calculator"></i></a></div>
+            <h4>GUI Calculator Using Python</h4>
+            <p>An interactive GUI-based calculator built with Python’s Tkinter, allowing basic arithmetic operations.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icons"><a href="https://github.com/Varsha-hub-create"><i class="fas fa-chart-bar"></i></a></div>
+            <h4>Excel Dashboard</h4>
+            <p>A data-driven dashboard that visualizes key insights using Excel tools, improving data analysis.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
