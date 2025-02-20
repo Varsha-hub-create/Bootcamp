@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fictional Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .product {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        body{
+            background-color: rgb(196, 245, 228);
+            text-align: center;
+        }
+        h2{
+            color: rgb(13, 90, 99);
+        }
+        #head{
+            text-align: center;
+            background-color: rgb(17, 103, 127);
+            width: 100%;
+            height: fit-content;
+            padding: 10px;
+            color: white;
+        }
+        p{
+            margin: 10px 300px;
+        }
+        .btn {
+            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+   <div id="head"> <h1>Our Exclusive Products</h1></div>
+    
+    <div class="container product animate__animated animate__fadeInUp">
+        <h2>QuantumX Smartwatch</h2>
+        <img src="product.jpg" alt="QuantumX Smartwatch">
+        <p>The QuantumX Smartwatch is the next generation of wearable technology, offering seamless connectivity, advanced health tracking, and an ultra-modern design.</p>
+        <p><strong>Price:</strong> ₹1,499</p>
+        <button class="btn btn-primary">Buy Now</button>
+    </div>
+    
+    <div class="container product animate__animated animate__fadeInUp">
+        <h2>NeoVision AR Glasses</h2>
+        <img src="glass.jpg" alt="NeoVision AR Glasses">
+        <p>Experience the world like never before with NeoVision AR Glasses. Featuring high-definition augmented reality overlays, real-time navigation, and immersive entertainment options.</p>
+        <p><strong>Price:</strong> ₹48,999</p>
+        <button class="btn btn-primary">Buy Now</button>
+    </div>
+    
+    <div class="container product animate__animated animate__fadeInUp">
+        <h2>HyperCharge Wireless Pad</h2>
+        <img src="charging pad.jpg" alt="HyperCharge Wireless Pad">
+        <p>Say goodbye to tangled wires with the HyperCharge Wireless Pad. Delivering ultra-fast charging for all your devices, this sleek and compact charger is the perfect addition to your workspace.</p>
+        <p><strong>Price:</strong> ₹1,999</p>
+        <button class="btn btn-primary">Buy Now</button>
+    </div>
+    
+    <div class="container product animate__animated animate__fadeInUp">
+        <h2>AeroPods Pro</h2>
+        <img src="airpro.jpg" alt="AeroPods Pro">
+        <p>The AeroPods Pro offer crystal-clear sound, active noise cancellation, and a comfortable fit for all-day wear. Perfect for music lovers and professionals alike.</p>
+        <p><strong>Price:</strong> ₹899</p>
+        <button class="btn btn-primary">Buy Now</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+</body>
+</html>
 
