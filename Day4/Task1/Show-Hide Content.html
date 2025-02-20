@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>Varsha Content Page</h1>
+    
+    <div id="b">
+        <div id="button-container">
+            <button onclick="showContent('car')">Show Car</button>
+            <button onclick="showContent('tiger')">Show Tiger</button>
+            <button onclick="showContent('camera')">Show Camera</button>
+        </div>
+        
+        <div id="car" class="content">
+            <h3>CAR</h3>
+            <img src="car.jpg" alt="Image for Car">
+            <p>A car, or an automobile, is a motor vehicle with wheels. Most definitions of cars state that they run primarily on roads, seat one to eight people, have four wheels, and mainly transport people rather than cargo...</p>
+            <button onclick="hideContent('car')">Hide Car</button>
+        </div>
+
+        <div id="tiger" class="content">
+            <h3>TIGER</h3>
+            <img src="tiger.jpg" alt="Image for Tiger">
+            <p>The tiger (Panthera tigris) is a large cat and a member of the genus Panthera native to Asia...</p>
+            <button onclick="hideContent('tiger')">Hide Tiger</button>
+        </div>
+
+        <div id="camera" class="content">
+            <h3>CAMERA</h3>
+            <img src="camera.jpg" alt="Image for Camera">
+            <p>A camera is an instrument used to capture and store images and videos, either digitally via an electronic image sensor...</p>
+            <button onclick="hideContent('camera')">Hide Camera</button>
+        </div>
+    </div>
+</body>
+</html>
 
