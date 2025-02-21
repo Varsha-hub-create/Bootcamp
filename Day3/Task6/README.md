@@ -1,4 +1,4 @@
-# A Validation FOrm
+# A Validation Form
 
 This project is a Validation Form Website built using HTML, CSS, and JavaScript. It adapts to different screen sizes, ensuring a great user experience on mobile, tablet, and desktop devices.
 
