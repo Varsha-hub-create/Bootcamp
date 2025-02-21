@@ -36,7 +36,6 @@ For any inquiries, feel free to reach out via:
 - Email: varshinisakthivel18@gmail.com
 - GitHub**: [Varsha-hub-create](https://github.com/Varsha-hub-create)
 - **LinkedIn**: [Varshini S](https://www.linkedin.com/in/varshini-s-)
-- **Phone**: 6380997220
 
 ## License
 This project is open-source and available under the MIT License.
