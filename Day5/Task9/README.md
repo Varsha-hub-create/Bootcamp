@@ -1,5 +1,5 @@
 
-### 2. `command_line/README.md`
+### `command_line/README.md`
 ```md
 # Command Line Input Handling
 
