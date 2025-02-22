@@ -1,5 +1,5 @@
 
-### 3. `file/README.md`
+### `file/README.md`
 ```md
 # File Handling in JavaScript
 
