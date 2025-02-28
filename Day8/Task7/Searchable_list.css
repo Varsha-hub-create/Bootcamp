@@ -1,0 +1,104 @@
+/* General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #eef2f3);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Student Container */
+.student-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 80%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Student List */
+.student-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Student Card */
+.student-card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Background Colors for Each Year */
+.freshman {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.junior {
+  background: linear-gradient(135deg, #56ccf2, #2f80ed);
+}
+
+.senior {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+}
+
+.default-card {
+  background: linear-gradient(135deg, #d3d3d3, #808080);
+}
+
+/* Typography */
+.student-card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.student-card p {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* No Results Message */
+.no-results {
+  font-size: 18px;
+  font-weight: 500;
+  color: #888;
+  margin-top: 20px;
+}
