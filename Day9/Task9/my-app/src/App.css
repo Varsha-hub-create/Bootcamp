@@ -1,0 +1,69 @@
+/* Global styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f0dede;
+  background-color: #6f7203;
+  margin: 0;
+  padding: 0;
+}
+
+/* AppBar (Header) */
+.MuiAppBar-root {
+  background-color: #1976d2 !important;
+  margin-left: 150px;
+}
+
+/* Container */
+.container {
+  margin-top: 20px;
+
+}
+
+/* Typography Styles */
+h4 {
+  font-weight: 600;
+  margin-left: 200px !important;
+  margin-bottom: 15px;
+}
+
+/* Search Input */
+.MuiTextField-root {
+  background: #ffffff;
+  margin-left: 150px !important;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+/* Center loading spinner */
+.MuiCircularProgress-root {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Student Cards */
+.MuiCard-root {
+  background-color: #043f60 !important;
+  color: #ffffff !important;
+  margin-left: 150px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.MuiCard-root:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Error Alert */
+.MuiAlert-root {
+  background-color: #ff4d4d !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Responsive Grid */
+@media (max-width: 600px) {
+  .MuiGrid-item {
+    width: 100%;
+  }
+}
