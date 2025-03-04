@@ -1,0 +1,162 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background-color: #f8f9fa; */
+  background-image:url(./assets/bg.jpg) ;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main Container */
+.container {
+  width: 380px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #582602;
+  font-size: 32px;
+  margin-bottom: 15px;
+  
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fec282;
+  transition: border-color 0.3s ease-in-out;
+  font-size: 14px;
+  color: #582602;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 12px;
+  background-color: #28a745;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out, opacity 0.3s;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+
+/* Add Task Button */
+.add-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+/* Delete Button */
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+li {
+  background: #ffffff;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: translateX(4px);
+}
+
+/* Task Title */
+.task-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Status */
+.status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.status.open {
+  background-color: #ffc107;
+  color: black;
+}
+
+.status.in-progress {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.status.completed {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .container {
+    width: 95%;
+  }
+}
